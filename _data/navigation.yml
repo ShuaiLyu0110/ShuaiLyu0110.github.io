@@ -12,11 +12,11 @@ main:
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
-  #  - title: "Educations"
-  #    url: "/#educations"
-
   - title: "Talks"
     url: "/#-talks"
 
   - title: "Experiences"
     url: "/#-experiences"
+
+  - title: "Academic Service"
+    url: "/#-academic-service"
