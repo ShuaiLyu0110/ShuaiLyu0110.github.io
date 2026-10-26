@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Zhongjian Zhang"
-description              : "PhD Student, BUPT"
-repository               : "zhongjian-zhang/zhongjian-zhang.github.io"
+title                    : "Shuai Lyu"
+description              : "Ph.D. Student, School of Computer Science, BUPT"
+repository               : "ShuaiLyu0110/ShuaiLyu0110.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics
-google_analytics_id      : G-BC6W60RH09  # get google_analytics_id from https://analytics.google.com/analytics/
+google_analytics_id      :  # Add your own Google Analytics ID if needed
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "<div style='text-align: center;'>Zhongjian Zhang<br>张中健</div>"
-  avatar           : "images/android-chrome-512x512.png"
-  bio              : ""
-  location         : "China"
-  employer         :
+  name             : "<div style='text-align: center;'>Shuai Lyu<br>吕帅</div>"
+  avatar           : "images/shuai-lyu.jpg"
+  bio              : "Multimodal Learning · Efficient Reasoning"
+  location         : "Beijing, China"
+  employer         : "School of Computer Science, BUPT"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=XkeONm0AAAAJ"
-  email            : "zhangzj@bupt.edu.cn"
+  googlescholar    :
+  email            : "Lxb_savior@163.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : zhongjian-zhang # e.g., "github username"
+  github           : "ShuaiLyu0110" # GitHub username
   google_plus      :
   keybase          :
   instagram        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : "https://orcid.org/0009-0004-2164-9009"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
