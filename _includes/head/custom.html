@@ -1,12 +1,12 @@
-<link rel="icon" type="image/jpeg" href="{{ '/images/shuai-lyu.jpg' | relative_url }}?v=20261027">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}?v=20261027">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}?v=20261027">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}?v=20261027">
-<link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}?v=20261027">
+
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}?v=20261027b">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}?v=20261027b">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}?v=20261027b">
+<link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}?v=20261027b">
 
 <meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
-<meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="msapplication-TileImage" content="{{ '/images/shuai-lyu.jpg' | relative_url }}?v=20261027b">
+
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
@@ -1621,6 +1621,22 @@
     }
   }
 
+
+  .sidebar .author__avatar,
+  .sidebar .author__avatar img {
+    display: block !important;
+    width: 150px !important;
+    height: 200px !important;
+    max-width: 150px !important;
+    object-fit: cover !important;
+    object-position: center 25% !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    opacity: 1 !important;
+  }
+  .sidebar .author__avatar img {
+    min-height: 200px !important;
+  }
 </style>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
