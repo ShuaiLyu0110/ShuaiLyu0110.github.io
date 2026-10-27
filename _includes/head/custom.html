@@ -1,9 +1,8 @@
-<link rel="icon" type="image/jpeg" href="{{ '/images/shuai-lyu.jpg' | relative_url }}">
-<link rel="apple-touch-icon" href="{{ '/images/shuai-lyu.jpg' | relative_url }}">
-<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-<link rel="manifest" href="images/site.webmanifest">
+<link rel="icon" type="image/jpeg" href="{{ '/images/shuai-lyu.jpg' | relative_url }}?v=20261027">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}?v=20261027">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}?v=20261027">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}?v=20261027">
+<link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}?v=20261027">
 
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
@@ -1600,6 +1599,28 @@
     border-color: #334155 !important;
     color: #e5e7eb !important;
   }
+
+  /* Use the owner's portrait consistently in the sidebar at every breakpoint. */
+  .sidebar .author__avatar img,
+  .sidebar img.author__avatar {
+    display: block !important;
+    width: 150px !important;
+    height: 200px !important;
+    max-width: min(150px, 100%) !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+    border-radius: 50% !important;
+    margin: 0 auto !important;
+  }
+
+  @media (max-width: 600px) {
+    .sidebar .author__avatar img,
+    .sidebar img.author__avatar {
+      width: 150px !important;
+      height: 200px !important;
+    }
+  }
+
 </style>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
