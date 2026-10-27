@@ -1653,5 +1653,17 @@
 <!-- end custom head snippets -->
 
 
-<!-- Public page-view counter (Busuanzi). -->
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- Public page-view counter. The original Busuanzi endpoint is unreliable, so use the maintained compatible endpoint. -->
+<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js" data-busuanzi-counter></script>
+<script>
+  // Avoid leaving a permanent "Loading…" label if the external counter service is unavailable.
+  window.setTimeout(function () {
+    var value = document.getElementById("busuanzi_value_site_pv");
+    if (!value) return;
+    var text = (value.textContent || "").trim();
+    if (!text || text === "Loading…" || text === "Loading...") {
+      value.textContent = "—";
+      value.setAttribute("title", "Visit counter temporarily unavailable");
+    }
+  }, 8000);
+</script>
