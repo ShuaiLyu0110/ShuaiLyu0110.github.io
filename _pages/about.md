@@ -179,14 +179,13 @@ My first-author research includes <strong>ACM Multimedia 2026 (Oral)</strong> an
 <div class="award-list">
   <div class="award-item"><span class="award-index">1</span><span class="award-title">BYD Enterprise-Donated Scholarship (one recipient per year)</span><span class="award-year">2026.10</span></div>
   <div class="award-item"><span class="award-index">2</span><span class="award-title">Academic Innovation Award, Engineering Research Center of Information Networks, Ministry of Education</span><span class="award-year">2025.12</span></div>
-  <div class="award-item"><span class="award-index">3</span><span class="award-title">Outstanding Ph.D. Student, Beijing University of Posts and Telecommunications</span><span class="award-year">—</span></div>
+  <div class="award-item"><span class="award-index">3</span><span class="award-title">Outstanding Ph.D. Student, Beijing University of Posts and Telecommunications</span><span class="award-year">2025.12</span></div>
   <div class="award-item"><span class="award-index">4</span><span class="award-title">Ph.D. Academic Scholarship, Beijing University of Posts and Telecommunications (4 times)</span><span class="award-year">4×</span></div>
-  <div class="award-item"><span class="award-index">5</span><span class="award-title">Undergraduate Special Scholarship (one recipient per year)</span><span class="award-year">2016.12</span></div>
+  <div class="award-item"><span class="award-index">5</span><span class="award-title">Undergraduate Special Scholarship (one recipient per year)</span><span class="award-year">2016.11</span></div>
   <div class="award-item"><span class="award-index">6</span><span class="award-title">University First- and Second-Class Scholarships (6 times)</span><span class="award-year">—</span></div>
   <div class="award-item"><span class="award-index">7</span><span class="award-title">Kaggle Home Credit Competition · Silver Medal (ranked 69 / 3,856 teams)</span><span class="award-year">2024</span></div>
   <div class="award-item"><span class="award-index">8</span><span class="award-title">Kaggle Optiver Competition · Bronze Medal (ranked 264 / 4,436 teams)</span><span class="award-year">2024</span></div>
-  <div class="award-item"><span class="award-index">9</span><span class="award-title">Third Prize, Mathematics Competition</span><span class="award-year">—</span></div>
-  <div class="award-item"><span class="award-index">10</span><span class="award-title">Outstanding Graduate, Taiyuan University of Science and Technology</span><span class="award-year">—</span></div>
+  <div class="award-item"><span class="award-index">9</span><span class="award-title">Third Prize, Mathematics Competition</span><span class="award-year">2016</span></div>
 </div>
 
 <h1 id="-talks" class="section-heading"><span class="section-heading__emoji">💬</span><span class="section-heading__text">Talks</span></h1>
