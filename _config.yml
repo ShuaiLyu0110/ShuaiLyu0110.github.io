@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "<div style='text-align: center;'>Shuai Lyu<br>吕帅</div>"
-  avatar           : "images/shuai-lyu.jpg"
+  avatar           : "/images/shuai-lyu.jpg"
   bio              : "Multimodal Learning · Efficient Reasoning"
   location         : "Beijing, China"
   employer         : "School of Computer Science, BUPT"
