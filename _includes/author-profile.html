@@ -67,9 +67,6 @@
       {% if author.github %}
         <li class="author__contact-item"><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
-      {% if author.orcid %}
-        <li class="author__contact-item"><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw"></i> ORCID</a></li>
-      {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
@@ -110,8 +107,7 @@
         <li class="author__contact-item"><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw"></i> Scholar</a></li>
       {% endif %}
       <li class="author__contact-item">
-        <i class="fas fa-fw fa-chart-line" style="color: inherit;"></i>
-        <span id="busuanzi_container_site_pv" style="display:inline;">Visits: <span id="busuanzi_value_site_pv">Loading…</span></span>
+        <button type="button" class="wechat-qr-trigger"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> Wechat</button>
       </li>
 {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
@@ -133,6 +129,7 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
+      <button type="button" class="wechat-qr-trigger author__urls_sm-wechat" title="Wechat" aria-label="Wechat"><i class="fab fa-fw fa-weixin" aria-hidden="true"></i></button>
 {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
       {% endif %}
@@ -210,9 +207,6 @@
       {% endif %}
       {% if author.pubmed %}
         <a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i></a>
-      {% endif %}
-      {% if author.orcid %}
-        <a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i></a>
       {% endif %}
       {% if author.impactstory %}
         <a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i></a>

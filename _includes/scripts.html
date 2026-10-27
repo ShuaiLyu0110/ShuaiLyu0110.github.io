@@ -3,9 +3,6 @@
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
 
-<!-- Busuanzi Visitor Counter -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="/assets/js/visit-count.js"></script>
 <script src="/assets/js/news-timeline.js"></script>
 
 <!-- Back to Top Button -->
@@ -17,6 +14,16 @@
 <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
     <i class="fas fa-moon" id="darkModeIcon"></i>
 </button>
+<!-- Wechat QR Modal -->
+<div id="wechat-qr-modal" class="wechat-qr-modal" aria-hidden="true">
+    <button type="button" class="wechat-qr-modal__backdrop" aria-label="Close Wechat QR code"></button>
+    <div class="wechat-qr-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="wechat-qr-title">
+        <button type="button" class="wechat-qr-modal__close" aria-label="Close Wechat QR code">&times;</button>
+        <h3 id="wechat-qr-title">Wechat</h3>
+        <img src="{{ '/images/wechat-qr.png' | relative_url }}?v=20261027b" alt="WeChat QR code" loading="lazy">
+    </div>
+</div>
+
 <script>
 // Back to Top
 const backToTop = document.getElementById('backToTop');
@@ -68,4 +75,34 @@ function copyBibtex(button) {
     });
 }
 
+
+
+// Wechat QR Modal
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('wechat-qr-modal');
+    if (!modal) return;
+
+    const openModal = (event) => {
+        event.preventDefault();
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+    };
+
+    document.querySelectorAll('.wechat-qr-trigger').forEach((trigger) => {
+        trigger.addEventListener('click', openModal);
+    });
+
+    modal.querySelectorAll('.wechat-qr-modal__backdrop, .wechat-qr-modal__close').forEach((control) => {
+        control.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+});
 </script>

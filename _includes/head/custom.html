@@ -1637,6 +1637,106 @@
   .sidebar .author__avatar img {
     min-height: 200px !important;
   }
+
+  /* Wechat link and QR modal, matching the reference profile. */
+  .sidebar .author__urls a,
+  .sidebar .author__urls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.42rem;
+    margin-bottom: 0;
+    padding: 0.08rem 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+  }
+  .sidebar .author__urls button i { width: 1.25rem; text-align: center; }
+  .sidebar .author__urls_sm button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.28rem;
+    height: 1.28rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .wechat-qr-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .wechat-qr-modal.is-open { display: flex; }
+  .wechat-qr-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(15, 23, 42, 0.55);
+    cursor: pointer;
+  }
+  .wechat-qr-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(88vw, 24rem);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 1.15rem 1.15rem 1.25rem;
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.35);
+    text-align: center;
+  }
+  .wechat-qr-modal__dialog h3 {
+    margin: 0 2rem 1rem;
+    color: #2f3437;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+  .wechat-qr-modal__dialog img {
+    display: block;
+    width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
+    border-radius: 14px;
+    background: #fff;
+  }
+  .wechat-qr-modal__close {
+    position: absolute;
+    top: 0.72rem;
+    right: 0.82rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.85rem;
+    height: 1.85rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #6b7280;
+    font-size: 1.55rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .wechat-qr-modal__close:hover { background: #f3f4f6; color: #111827; }
+  [data-theme="dark"] .wechat-qr-modal__dialog { background: #18223a; }
+  [data-theme="dark"] .wechat-qr-modal__dialog h3 { color: #e5e7eb; }
+
 </style>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
@@ -1653,17 +1753,3 @@
 <!-- end custom head snippets -->
 
 
-<!-- Public page-view counter. The original Busuanzi endpoint is unreliable, so use the maintained compatible endpoint. -->
-<script async src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js" data-busuanzi-counter></script>
-<script>
-  // Avoid leaving a permanent "Loading…" label if the external counter service is unavailable.
-  window.setTimeout(function () {
-    var value = document.getElementById("busuanzi_value_site_pv");
-    if (!value) return;
-    var text = (value.textContent || "").trim();
-    if (!text || text === "Loading…" || text === "Loading...") {
-      value.textContent = "—";
-      value.setAttribute("title", "Visit counter temporarily unavailable");
-    }
-  }, 8000);
-</script>
